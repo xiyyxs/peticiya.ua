@@ -1,0 +1,99 @@
+:root {
+    --card-color: rgb(185, 185, 185);
+    --text-color: #000000;
+    --accent-color: #969696;
+    --accent-gradient: linear-gradient(135deg, #7a7a7a 0%, #494949 100%);
+    --background-gradient: linear-gradient(135deg, #494949 0%, #000000 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 100%;
+    background: var(--background-gradient);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #ffffff;
+    line-height: 1.6;
+    margin-bottom: 800px;
+    position: absolute;
+    padding-right: 10px;
+}
+
+.card2 {
+    background: var(--card-color);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    width: 550px;
+    box-shadow: 0 8px 32px 0 #636363; 
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 100px;
+}
+
+
+.BigBio {
+    font-size: 1.4rem;
+    color: #000000;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.buttons-section {
+    margin-bottom: 2rem;
+}
+
+.button-group {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.btn {
+    flex: 1;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn i {
+    font-size: 1.1rem;
+}
+
+
+.setup {
+    background: var(--accent-color);
+    color: white;
+    -webkit-touch-callout: none; 
+    -webkit-user-select: none;  
+    -khtml-user-select: none;   
+    -moz-user-select: none;      
+    -ms-user-select: none;      
+    user-select: none; 
+}
+
+.setup:hover {
+    background: #636363;
+    transform: translateY(-2px);
+}

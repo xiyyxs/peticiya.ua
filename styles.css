@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'DrukWideCyr';
+    src: url('../assets/fonts/DrukWideCyr-Medium.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --card-color: rgb(185, 185, 185);
+    --text-color: #ffffff;
+    --accent-color: #969696;
+    --accent-gradient: linear-gradient(135deg, #7a7a7a 0%, #494949 100%);
+    --background-gradient: linear-gradient(135deg, #494949 0%, #000000 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    min-height: 100vh;
+    background: var(--background-gradient);
+    color: var(--text-color);
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: DrukWideCyr;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    background: white;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
